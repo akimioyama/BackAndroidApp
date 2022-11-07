@@ -41,7 +41,6 @@ namespace AndroidApp.API.Controllers
                         reader.GetString(2).ToString()
                         );
                     person.Add(temp);
-
                 }
             }
             var json = JsonConvert.SerializeObject(person);
