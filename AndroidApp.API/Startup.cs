@@ -10,6 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AndroidApp.Application.Services;
+using AndroidApp.Application.Services.Interfaces;
+using AndroidApp.Application.Services.Implementation;
 
 namespace AndroidApp.API
 {
@@ -31,6 +34,7 @@ namespace AndroidApp.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AndroidApp.API", Version = "v1" });
             });
+            services.AddScoped<IPersonService, PersonService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

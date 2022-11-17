@@ -11,11 +11,12 @@ namespace AndroidApp.Domain.Person
         public int id;
         public string name;
         public string number;
-        public Person(int id, string name, string number)
+        public Person (int id, string name, string number)
         {
             this.id = id;
             this.name = name;
             this.number = number;
         }
+        
     }
 }

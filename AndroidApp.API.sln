@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidApp.API", "AndroidApp.API\AndroidApp.API.csproj", "{930C9187-064C-41E0-A767-5248FB52844B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndroidApp.API", "AndroidApp.API\AndroidApp.API.csproj", "{930C9187-064C-41E0-A767-5248FB52844B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidApp.Domain", "AndroidApp.Domain\AndroidApp.Domain.csproj", "{07DF20BE-1642-47B8-B686-47D5368A88AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndroidApp.Domain", "AndroidApp.Domain\AndroidApp.Domain.csproj", "{07DF20BE-1642-47B8-B686-47D5368A88AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidApp.SQL", "AndroidApp.SQL\AndroidApp.SQL.csproj", "{9D3EFE3F-EDF3-4277-8071-2274D8269120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidApp.Application", "AndroidApp.Application\AndroidApp.Application.csproj", "{611F0914-C549-4D6D-8781-930268A372AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{07DF20BE-1642-47B8-B686-47D5368A88AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07DF20BE-1642-47B8-B686-47D5368A88AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07DF20BE-1642-47B8-B686-47D5368A88AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D3EFE3F-EDF3-4277-8071-2274D8269120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D3EFE3F-EDF3-4277-8071-2274D8269120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D3EFE3F-EDF3-4277-8071-2274D8269120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D3EFE3F-EDF3-4277-8071-2274D8269120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{611F0914-C549-4D6D-8781-930268A372AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{611F0914-C549-4D6D-8781-930268A372AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{611F0914-C549-4D6D-8781-930268A372AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{611F0914-C549-4D6D-8781-930268A372AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
