@@ -74,7 +74,7 @@ namespace AndroidApp.API.Controllers
             conn.Close();
             return Ok(json);
         }
-        [HttpDelete("{id}")]
+        [HttpGet("del/{id}")]
         public IActionResult DelPerson(int id)
         {
             string sql = $"delete from person where person.id = {id}";
@@ -85,10 +85,10 @@ namespace AndroidApp.API.Controllers
             conn.Close();
             return Ok();
         }
-        [HttpPost("{name}/{number}")]
+        [HttpGet("{name}/{number}")]
         public IActionResult CreatePerson(string name, string number)
         {
-            string sql = $"insert into person VALUES ('{name}', '{number}')";
+            string sql = $"insert into person VALUES ('" + name + "', '+" + number + "')";
             SqlConnection conn = new SqlConnection(stringconn);
             conn.Open();
             var command = new SqlCommand(sql, conn);
@@ -97,10 +97,10 @@ namespace AndroidApp.API.Controllers
             conn.Close();
             return Ok(result);
         }
-        [HttpPut("{id}/{name}/{number}")]
+        [HttpGet("{id}/{name}/{number}")]
         public IActionResult PutPerson(int id, string name, string number)
         {
-            string sql = $"update person set name = '{name}', number = '{number}' where id = {id}";
+            string sql = $"update person set name = '{name}', number = '+{number}' where id = {id}";
             SqlConnection conn = new SqlConnection(stringconn);
             conn.Open();
             var command = new SqlCommand(sql, conn);
